@@ -1,0 +1,14 @@
+,202501,202502,202503,202504,202505,202506,202507,202508,202509,202510,202511,202512
+ride_id,object,object,object,object,object,object,object,object,object,object,object,object
+rideable_type,object,object,object,object,object,object,object,object,object,object,object,object
+started_at,object,object,object,object,object,object,object,object,object,object,object,object
+ended_at,object,object,object,object,object,object,object,object,object,object,object,object
+start_station_name,object,object,object,object,object,object,object,object,object,object,object,object
+start_station_id,object,object,object,object,object,object,object,object,object,object,object,object
+end_station_name,object,object,object,object,object,object,object,object,object,object,object,object
+end_station_id,object,object,object,object,object,object,object,object,object,object,object,object
+start_lat,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64
+start_lng,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64
+end_lat,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64
+end_lng,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64,float64
+member_casual,object,object,object,object,object,object,object,object,object,object,object,object
