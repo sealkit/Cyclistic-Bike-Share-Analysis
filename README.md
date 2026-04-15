@@ -11,21 +11,22 @@ How do annual members and casual riders use Cyclistic bikes differently?
 
 ## Project Structure
 
+```
 Cyclistic-Bike-Share-Analysis/
+├── README.md
+├── requirements.txt
 ├── data/
 │   ├── processed/          ← Final cleaned dataset
 │   └── output/             ← All analysis results (CSV)
 ├── scripts/
 │   ├── python/             ← All Python analysis scripts
-│   └── sql/                ← SQL queries (pending)
+│   └── sql/                ← SQL queries
 ├── visualizations/
 │   ├── tableau/            ← Tableau workbook (.twbx)
 │   └── images/             ← Dashboard screenshots
-├── report/                 ← Final report (to be added)
-├── requirements.txt
-└── README.md
+└── report/                 ← Final report
 
-
+```
 ---
 
 ## Key Findings
@@ -38,7 +39,7 @@ Cyclistic-Bike-Share-Analysis/
 ## Visualizations
 
 **Interactive Tableau Dashboard**  
-https://public.tableau.com/views/CyclisticCaseStudy_17762667207600/Casualriderstakesignificantlylongertripsthanmembers?:language=zh-TW&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+[View Full Interactive Dashboard](https://public.tableau.com/views/CyclisticCaseStudy_17762667207600/Casualriderstakesignificantlylongertripsthanmembers?:language=zh-TW&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 **Main Dashboard Highlights:**
 - Ride length comparison (Box plot + Histogram)
