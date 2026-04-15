@@ -14,6 +14,7 @@ How do annual members and casual riders use Cyclistic bikes differently?
 ```
 Cyclistic-Bike-Share-Analysis/
 ├── README.md
+├── PROJECT_REPORT.md
 ├── requirements.txt
 ├── data/
 │   ├── processed/          ← Final cleaned dataset
@@ -45,7 +46,7 @@ Cyclistic-Bike-Share-Analysis/
 - Ride length comparison (Box plot + Histogram)
 - Weekly and hourly usage patterns
 - Rideable type contribution analysis
-
+![Dashboard](visualizations/images/dashboard.png)
 ---
 
 ## Technologies Used
@@ -59,6 +60,15 @@ Cyclistic-Bike-Share-Analysis/
 1. Target weekend and midday leisure riders with classic bike-focused membership offers.
 2. Create a "Longer Ride" membership incentive program emphasizing classic bike usage.
 3. Use time- and day-based messaging to highlight cost savings for casual riders.
+
+---
+
+Personal ReflectionThe analysis focused on ride length, temporal patterns (day of week and start hour), and rideable type. Additional dimensions such as monthly/seasonal trends and station-level analysis could be explored in future work to further strengthen marketing recommendations.
+
+---
+
+## Detailed Project Report
+For the complete step-by-step process (Ask → Prepare → Process → Analyze → Share → Act), please see **[PROJECT_REPORT.md](PROJECT_REPORT.md)**
 
 ---
 
