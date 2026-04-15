@@ -181,3 +181,34 @@ Casual riders consistently take significantly longer trips than annual members. 
 **In summary**, annual members primarily use Cyclistic bikes for short, routine weekday commuting, while casual riders favor longer, leisure-oriented rides, particularly on weekends and during daytime hours, often selecting classic bikes when they want extended journeys. These distinct patterns provide a strong foundation for developing targeted marketing strategies aimed at converting casual riders into annual members.
 
 ---
+
+## Share
+
+### Supporting Visualizations and Key Findings
+
+The following interactive Tableau dashboard was created to present the key findings in a clear, professional, and executive-friendly format.
+
+**Interactive Tableau Dashboard**  
+[View Full Interactive Dashboard](https://public.tableau.com/views/CyclisticCaseStudy_17762667207600/Casualriderstakesignificantlylongertripsthanmembers?:language=zh-TW&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+![Cyclistic Bike-Share Dashboard](visualizations/images/dashboard.png)
+
+### Key Findings
+
+The analysis reveals consistent and actionable differences between casual riders and annual members:
+
+- **Ride Length**: Casual riders take significantly longer trips than annual members (average 17.19 minutes vs 11.07 minutes). The distribution shows casual riders have a much longer tail of extended trips.
+
+- **Weekly Patterns**: Casual riders dominate weekends with both higher ride counts and longer average ride lengths (Sunday: 19.61 min, Saturday: 19.13 min). In contrast, annual members dominate weekdays with shorter, high-frequency trips, peaking on Thursday (561,114 rides).
+
+- **Hourly Patterns**: Casual riders show a steady increase in ride volume throughout the day, peaking at 17:00. Annual members exhibit clear commuting peaks in the morning (07:00-09:00) and evening (17:00).
+
+- **Rideable Type**: Although electric bikes are the majority for both groups, classic bikes play a disproportionately important role for casual riders. Classic bikes represent only 33.35% of casual rides but contribute 45.65% of total ride minutes, significantly raising the overall average ride length for casual riders.
+
+### Story Told by the Data
+
+Casual riders primarily use Cyclistic bikes for **leisure and recreational purposes** — longer rides on weekends and during midday hours, often choosing classic bikes when they want extended journeys. Annual members primarily use the service for **routine commuting** — short, frequent trips on weekdays with clear morning and evening peaks.
+
+These behavioral differences provide a strong, data-driven foundation for designing targeted marketing strategies to convert casual riders into annual members.
+
+---
