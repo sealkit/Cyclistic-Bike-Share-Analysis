@@ -1,0 +1,5 @@
+group,rideable_type,ride_count,ride_percentage,mean_ride_length,median_ride_length,total_ride_minutes,minutes_percentage
+casual,classic_bike,653723,33.35,23.53,15.92,15382807.73,45.65
+casual,electric_bike,1306361,66.65,14.02,9.75,18310823.86,54.35
+member,classic_bike,1254537,36.04,12.17,9.12,15262013.33,39.62
+member,electric_bike,2226402,63.96,10.45,8.32,23256086.53,60.38

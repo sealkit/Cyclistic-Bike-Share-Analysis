@@ -1,0 +1,13 @@
+day_type,rideable_type,member_casual,ride_count,percentage,mean_ride_length,median_ride_length
+Weekday,classic_bike,Overall,1345918,34.5,14.85,10.21
+Weekday,classic_bike,casual,387013,31.46,22.22,14.76
+Weekday,classic_bike,member,958905,35.9,11.88,8.93
+Weekday,electric_bike,Overall,2555626,65.5,11.16,8.49
+Weekday,electric_bike,casual,843256,68.54,13.02,9.14
+Weekday,electric_bike,member,1712370,64.1,10.25,8.2
+Weekend,classic_bike,Overall,562342,36.53,18.95,12.99
+Weekend,classic_bike,casual,266710,36.54,25.43,17.73
+Weekend,classic_bike,member,295632,36.51,13.11,9.8
+Weekend,electric_bike,Overall,977137,63.47,13.35,9.75
+Weekend,electric_bike,casual,463105,63.46,15.83,11.08
+Weekend,electric_bike,member,514032,63.49,11.11,8.78
