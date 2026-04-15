@@ -73,7 +73,7 @@ The following cleaning and transformation steps were performed on the merged dat
 #### 3. Missing Value Analysis (Station Information)
 A comparison was conducted between records with missing station information (filled as "Unknown") and records with complete station data.
 
-- Total records: 5,552,092  
+- Total records: 5,552,063   
 - Records with missing station data: 1,862,960 (**33.55%**)
 
 **Key Findings**:
@@ -87,7 +87,7 @@ A comparison was conducted between records with missing station information (fil
 Outliers were examined using both Tableau visualizations (box plots and histograms) and Python group-specific percentile calculations (1% and 99% percentiles, calculated separately for casual and member riders).
 
 **Key Findings**:
-- Outlier records identified: 111,040 (**exactly 2.00%**)
+- Outlier records identified: 111,040 (**2.00%**)
 - Perfectly balanced between groups: Casual (40,000 rows, 2.0%), Member (71,040 rows, 2.0%)
 - Outliers have extremely high mean ride length (154.53 minutes) compared to non-outliers (13.27 minutes).
 - Removing outliers reduces overall mean ride length from 16.10 to 13.27 minutes, while the median remains stable at 9.44 minutes.
@@ -109,5 +109,75 @@ Outliers were examined using both Tableau visualizations (box plots and histogra
 - `data/processed/ride_length_outlier_impact.csv`
 - `data/processed/ride_length_outlier_stats.csv`
 - `data/processed/ride_length_percentiles_by_group.csv`
+
+---
+
+## Analyze
+
+### Summary of Key Analysis
+
+The analysis examined ride length, temporal patterns (day of week and start hour), and rideable type to identify behavioral differences between casual riders and annual members.
+
+#### 1. Overall Ride Length Comparison
+Casual riders consistently take significantly longer trips than annual members.
+
+**Ride Length Statistics - Overall vs Casual vs Member**
+
+| Member Type | Count     | Mean   | Std    | Min   | 25%   | 50%   | 75%    | Max    |
+|-------------|-----------|--------|--------|-------|-------|-------|--------|--------|
+| Overall     | 5,441,023 | 13.27  | 13.08  | 0.22  | 5.47  | 9.44  | 16.36  | 132.49 |
+| Casual      | 1,960,084 | 17.19  | 17.96  | 0.22  | 6.39  | 11.41 | 20.85  | 132.49 |
+| Member      | 3,480,939 | 11.07  | 8.49   | 0.30  | 5.10  | 8.59  | 14.36  | 51.18  |
+
+Casual riders show a much longer tail in the ride length distribution, indicating a stronger preference for extended trips.  
+*(See corresponding Box Plot and Histogram in the Share section)*
+
+#### 2. Weekly Patterns (Day of Week)
+Casual riders exhibit a strong U-shaped pattern: both ride count and average ride length peak on weekends and drop noticeably during weekdays. Annual members show the opposite trend — highest ride frequency on weekdays with relatively stable, shorter ride lengths.
+
+**Key Insights**:
+- Casual riders dominate weekends (Sunday: 324,654 rides, mean 19.61 min; Saturday: 405,161 rides, mean 19.13 min).
+- Annual members dominate weekdays (peaking on Thursday: 561,114 rides).
+- The largest gap in ride length occurs on weekends.
+
+*(See corresponding Weekly Patterns visualization in the Share section)*
+
+#### 3. Hourly Patterns (Start Hour)
+Casual riders show a steady, continuous increase in ride volume from early morning, peaking only at 17:00. Annual members exhibit clear commuting peaks in the morning (7–9 AM) and evening (17:00).
+
+**Key Insights**:
+- Peak hour for both groups: 17:00 (Member: 374,807 rides; Casual: 187,395 rides).
+- Midday (10:00–14:00) is when casual riders take their longest trips (mean 20.04–20.78 minutes).
+- Members maintain consistently shorter rides (9–12 minutes) throughout the day.
+
+*(See corresponding Hourly Usage Patterns visualization in the Share section)*
+
+#### 4. Rideable Type Analysis (Classic vs Electric)
+Although the overall proportion of classic and electric bikes is similar between the two groups, a significant behavioral difference appears among casual riders.
+
+**Rideable Type Statistics**
+
+| Rideable Type   | Member Type | Ride Count | Percentage | Mean Ride Length | Median Ride Length |
+|-----------------|-------------|------------|------------|------------------|--------------------|
+| Classic Bike    | Overall     | 1,908,260  | 35.07%     | 16.06            | 10.92              |
+| Classic Bike    | Casual      | 653,723    | 33.35%     | 23.53            | 15.92              |
+| Classic Bike    | Member      | 1,254,537  | 36.04%     | 12.17            | 9.12               |
+| Electric Bike   | Overall     | 3,532,763  | 64.93%     | 11.77            | 8.79               |
+| Electric Bike   | Casual      | 1,306,361  | 66.65%     | 14.02            | 9.75               |
+| Electric Bike   | Member      | 2,226,402  | 63.96%     | 10.45            | 8.32               |
+
+**Key Insight**:  
+Classic bikes represent only 33.35% of casual rides, yet they contribute **45.65%** of total ride minutes among casual riders. This small proportion of classic bike usage is the primary driver pulling the overall casual rider average ride length upward (from 14.02 minutes on electric to 17.19 minutes overall).
+
+*(See corresponding Rideable Type Contribution visualization in the Share section)*
+
+---
+
+### Summary of Analysis
+The analysis of Cyclistic’s 2025 trip data reveals clear and consistent behavioral differences between casual riders and annual members across multiple dimensions.
+
+Casual riders consistently take significantly longer trips than annual members. Temporal patterns further highlight contrasting usage purposes: annual members exhibit classic commuting behavior with high ride frequency on weekdays and clear morning/evening peaks, while casual riders show a strong U-shaped weekly pattern with both ride count and ride length peaking on weekends and during midday hours. Regarding rideable type, although electric bikes dominate overall usage, classic bikes play a disproportionately important role for casual riders by significantly increasing their average ride length.
+
+**In summary**, annual members primarily use Cyclistic bikes for short, routine weekday commuting, while casual riders favor longer, leisure-oriented rides, particularly on weekends and during daytime hours, often selecting classic bikes when they want extended journeys. These distinct patterns provide a strong foundation for developing targeted marketing strategies aimed at converting casual riders into annual members.
 
 ---
