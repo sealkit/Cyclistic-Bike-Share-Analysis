@@ -212,3 +212,34 @@ Casual riders primarily use Cyclistic bikes for **leisure and recreational purpo
 These behavioral differences provide a strong, data-driven foundation for designing targeted marketing strategies to convert casual riders into annual members.
 
 ---
+
+## Act
+
+### Top Three Recommendations
+
+Based on the analysis, the following three recommendations are proposed to help convert casual riders into annual members:
+
+**1. Target Weekend and Midday Leisure Riders with Classic Bike-Focused Membership Offers**  
+Casual riders show the strongest preference for longer rides on weekends (Sunday: 19.61 min, Saturday: 19.13 min) and during midday hours (10:00–14:00, average >20 min). They also disproportionately choose classic bikes for these longer trips (23.53 min vs 14.02 min on electric).  
+
+**Recommendation**: Launch weekend-specific marketing campaigns (email, social media, in-app notifications) that highlight “unlimited longer rides with classic bikes” and offer a discounted annual membership trial during peak leisure times. This directly addresses the leisure-oriented behavior that members currently under-serve.
+
+**2. Create a “Longer Ride” Membership Tier or Incentive Program**  
+Although electric bikes dominate usage (66.65% of casual rides), classic bikes contribute 45.65% of total ride minutes among casual riders and significantly raise the overall average ride length. Casual riders who choose classic bikes clearly value longer journeys.  
+
+**Recommendation**: Introduce a membership tier or add-on that provides discounted/unlimited access to classic bikes for rides longer than 20 minutes, or offer bonus ride credits for classic bike usage. This leverages the observed behavioral difference and makes annual membership more attractive to the high-value leisure segment.
+
+**3. Use Time- and Day-Based Messaging to Highlight Cost Savings for Casual Riders**  
+Casual riders steadily increase ride volume throughout the day and dominate weekends, while members concentrate on weekday commuting peaks. The data clearly shows casual riders are not typical commuters but occasional longer-trip users.  
+
+**Recommendation**: Run targeted digital campaigns (Google Ads, Instagram, email) that compare single-ride/day-pass costs versus annual membership savings specifically for weekend and midday usage. Messages such as “Ride longer on weekends — save more with membership” can effectively convert casual riders who already demonstrate high engagement on those days.
+
+---
+
+### Conclusion
+
+These recommendations are directly derived from the observed behavioral differences: casual riders favor longer, leisure-oriented rides (especially on weekends and with classic bikes), while annual members focus on short, routine weekday commutes. Implementing these targeted strategies will maximize the conversion of casual riders into the more profitable annual member segment, supporting Cyclistic’s goal of future growth.
+
+---
+
+**End of Report**
